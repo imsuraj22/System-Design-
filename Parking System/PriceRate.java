@@ -4,7 +4,7 @@ public enum PriceRate {
     CAR(7),         // Car costs 7$
     TRUCK(10);      // Truck costs 10$
 
-    private final int rate;
+    private  int rate;
 
     PriceRate(int rate) {
         this.rate = rate;
@@ -12,6 +12,9 @@ public enum PriceRate {
 
     public int getRate() {
         return rate;
+    }
+    public void setRate(int newRate) {
+        this.rate = newRate;
     }
     public static double getRateForSlotType(SlotType slotType) {
         switch (slotType) {

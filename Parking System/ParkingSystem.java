@@ -6,7 +6,7 @@
             public static void main(String[] args) {
                 // Create an instance of the Parking class
                  parking=new Parking();
-
+                
                 // Add parking slots for different types
                 parking.addSlots(SlotType.BIKE, 10);
                 parking.addSlots(SlotType.CAR, 20);
@@ -15,7 +15,7 @@
                 entryPanel = new EntryGate();
                 exitPanel = new ExitGate();
                 // Simulate a vehicle entering the parking lot
-                Ticket ticket=parking.parkVehicle(SlotType.BIKE,entryPanel);
+                Ticket ticket=parking.parkVehicle(SlotType.CAR,entryPanel);
                 // Simulate the vehicle leaving the parking lot and calculate the payment
                 if (ticket != null) {
                     double payment = parking.exitParking(ticket, exitPanel);

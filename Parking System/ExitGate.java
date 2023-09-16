@@ -1,5 +1,7 @@
 import java.util.Date;
 
+
+
 public class ExitGate implements ExitPanel
  {
 
@@ -18,7 +20,9 @@ public class ExitGate implements ExitPanel
     
     double hourlyRate = PriceRate.getRateForSlotType(slotType);
 
-    
+    if(elapsedHours<1){
+        return hourlyRate;
+    }
     double amount = elapsedHours * hourlyRate;
 
     return amount;
