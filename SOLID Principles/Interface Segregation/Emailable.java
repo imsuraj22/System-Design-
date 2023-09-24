@@ -1,3 +1,0 @@
-interface Emailable {
-    void email();
-}
