@@ -1,0 +1,1 @@
+The Interface Segregation Principle (ISP) is one of the SOLID principles of object-oriented design. It states that a client should not be forced to depend on interfaces it does not use. In other words, you should design interfaces in a way that clients are not required to implement methods they don't need.
